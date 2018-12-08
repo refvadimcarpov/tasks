@@ -4,11 +4,11 @@
   "description": "babel + webpack",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "dev": "webpack & node bundle"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/refvadimcarpov/tasks.git"
+    "url": "https://github.com/refvadimcarpov/tasks.git"
   },
   "keywords": [
     "babel",
@@ -19,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/refvadimcarpov/tasks/issues"
   },
-  "homepage": "https://github.com/refvadimcarpov/tasks#readme"
+  "homepage": "https://github.com/refvadimcarpov/tasks/tree/master/task02",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
