@@ -15,5 +15,11 @@
     node helloWorld.js
         Hello, World!
 
+## Из среды npm
 
+    npm install
+    
+    npm run dev
+        > node helloWorld.js
 
+        Hello, World!

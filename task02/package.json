@@ -1,0 +1,23 @@
+{
+  "name": "task02",
+  "version": "0.0.1",
+  "description": "babel + webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/refvadimcarpov/tasks.git"
+  },
+  "keywords": [
+    "babel",
+    "webpack"
+  ],
+  "author": "Vadim Carpov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/refvadimcarpov/tasks/issues"
+  },
+  "homepage": "https://github.com/refvadimcarpov/tasks#readme"
+}

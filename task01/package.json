@@ -1,0 +1,23 @@
+{
+  "name": "task01",
+  "version": "0.0.1",
+  "description": "hello world",
+  "main": "helloWorld.js",
+  "scripts": {
+    "dev": "node helloWorld.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/refvadimcarpov/tasks.git"
+  },
+  "keywords": [
+    "hello",
+    "world"
+  ],
+  "author": "Vadim Carpov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/refvadimcarpov/tasks/issues"
+  },
+  "homepage": "https://github.com/refvadimcarpov/tasks/tree/master/task01"
+}
