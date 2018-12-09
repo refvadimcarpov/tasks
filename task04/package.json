@@ -1,0 +1,38 @@
+{
+  "name": "task04",
+  "version": "0.0.1",
+  "description": "jquery + webpack-dev-server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/refvadimcarpov/tasks.git"
+  },
+  "keywords": [
+    "jquery",
+    "webpack dev server"
+  ],
+  "author": "Vadim Carpov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/refvadimcarpov/tasks/issues"
+  },
+  "homepage": "https://github.com/refvadimcarpov/tasks/tree/master/task04",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.6",
+    "bootstrap": "^4.1.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "html-loader": "^0.5.5",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
