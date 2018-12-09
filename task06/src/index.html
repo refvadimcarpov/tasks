@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="es6app">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AngularJS Multiplier</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./bootstrap/dist/css/bootstrap.min.css"
+    />   
+  </head>
+  <body>
+    <div class="container-fluid" ng-controller="MultiplierController as multiplier">
+      <h1 class="jumbotron-fluid">{{multiplier.message}}</h1>
+      <div class="row">
+        <div class="col-11">
+          <input type="text" placeholder="Enter integral number" id="ctl" ng-model="multiplier.input" class="form-control" ng-keyup="multiplier.reset()"/>
+        </div>
+        <div class="col-1">
+            <button id="btn" class="{{multiplier.classNames}}" ng-click="multiplier.process()">Go!</button>
+        </div>
+      </div><hr />
+      <div class="row">
+        <div class="col-12">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Multiplier</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="num in multiplier.nums">
+                <th class="mul-{{num.key}}">{{num.key}}</th>
+                <td class="res-{{num.key}}">{{num.str}}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Total</th>
+                <td>{{ multiplier.total }}</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
