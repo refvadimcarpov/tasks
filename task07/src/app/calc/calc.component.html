@@ -1,0 +1,40 @@
+<div>
+  <div class="row">
+    <div class="col-11">
+      <input
+        type="text"
+        placeholder="Enter integral number"
+        id="ctl"
+        class="form-control"
+        [(ngModel)]="input"
+        (keyup)="reset()"
+      />
+    </div>
+    <div class="col-1"><button id="btn" [class.btn]="true" [class.btn-danger]="isEndangered" (click)="process()">Go!</button></div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Multiplier</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let num of nums">
+            <th class="mul-{{num.key}}">{{num.key}}</th>
+            <td class="res-{{num.key}}">{{num.str}}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Total</th>
+            <td>{{ total }}</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>
